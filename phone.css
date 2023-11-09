@@ -1,0 +1,337 @@
+/* Navbar */
+header {
+    height: 6vh;
+}
+
+#navbar {
+    padding: 10px;
+    width: 100%;
+    height: 5vh;
+}
+
+.border:hover {
+    border: 0.5px solid rgb(238, 106, 11);
+    cursor: pointer;
+    color: rgb(234, 152, 94);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.nav-logo span {
+    font-size: 1rem;
+}
+
+.nav-logo i {
+    font-size: 1rem;
+}
+
+.menu {
+    margin: 8px;
+    margin-top: 15px;
+    font-size: 0.61rem;
+}
+
+.profile {
+    margin: 8px;
+    margin-top: 13px;
+    font-size: 0.61rem;
+}
+
+.profile i {
+    margin-top: 4px;
+    font-size: 0.61rem;
+}
+
+.profile p {
+    font-size: 0.61rem;
+}
+
+.cart {
+    font-size: 0.61rem;
+    margin: 8px;
+    margin-top: 10px;
+}
+.cart p{
+    margin-top: 6px;
+}
+.cart i {
+    font-size: 0.61rem;
+    margin-top: 8px;
+}
+.dark i{
+    font-size: 0.7rem;
+    margin: 8px;
+    margin-top: 14px;
+    
+}
+
+.search input {
+    display: none;
+}
+.search {
+    padding-right: 5px;
+}
+.glass {
+    font-size: 0.7rem;
+    background: none;
+    color: white;
+}
+
+/* panel section  */
+.panel {
+    height: 2.5vh;
+}
+
+.options {
+    width: 100%;
+}
+
+.options ul li {
+    padding: 2px;
+    font-size: 0.45rem;
+    margin-top: 2.5px;
+}
+
+
+/* products section  */
+#mobiles {
+    height: 8vh;
+    width: 12vw;
+}
+
+#headphones {
+    height: 8vh;
+    width: 12vw;
+}
+
+#earphones {
+    height: 8vh;
+    width: 12vw;
+}
+
+#keyboard {
+    height: 8vh;
+    width: 12vw;
+}
+
+#television {
+    height: 8vh;
+    width: 12vw;
+    background-color: aliceblue;
+}
+
+#wearable {
+    height: 8vh;
+    width: 12vw;
+}
+
+#music-system {
+    height: 8vh;
+    width: 12vw;
+}
+
+.mobi span a {
+    font-size: 0.5rem;
+    margin-left: 7px;
+}
+
+.headphone span a {
+    font-size: 0.5rem;
+    margin-left: 7px;
+}
+
+.earphone span a {
+    font-size: 0.5rem;
+    margin-left: 7px;
+}
+
+.keyboard span a {
+    font-size: 0.5rem;
+    margin-left: 10px;
+}
+
+.tele span a {
+    font-size: 0.5rem;
+    margin-left: 10px;
+}
+
+.wear span a {
+    font-size: 0.5rem;
+    margin-left: 10px;
+}
+
+.music span a {
+    font-size: 0.5rem;
+    margin-left: 10px;
+}
+
+/* product boxes  */
+.head span {
+    font-size: 0.8rem;
+}
+
+.head {
+    font-size: 1rem;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.head2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.box-head {
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.offer-boxes-1 img {
+    height: 12vh;
+}
+
+.offer-boxes {
+    height: 28vh;
+}
+
+.offer-boxes img {
+    height: 10vh;
+    width: 100%;
+}
+
+.offer-boxes p {
+    font-size: 0.5rem;
+}
+
+.offer-boxes span {
+    font-size: 0.5rem;
+}
+
+.offer-boxes span del {
+    font-size: 0.45rem;
+}
+
+.box1 img {
+    height: 25vh;
+    width: 100%;
+}
+
+.box2 img {
+    height: 12vh;
+}
+
+/* brand section  */
+#apple {
+    height: 7vh;
+    width: 14vw;
+}
+
+#samsung {
+    height: 7vh;
+    width: 14vw;
+}
+
+#oppo {
+    height: 7vh;
+    width: 14vw;
+}
+
+#vivo {
+    height: 7vh;
+    width: 14vw;
+}
+
+#realme {
+    height: 7vh;
+    width: 14vw;
+}
+
+#redmi {
+    height: 7vh;
+    width: 14vw;
+}
+
+/* footer section  */
+.foot-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#btn button {
+    height: 3vh;
+    width: 25vw;
+    border-radius: 6px;
+}
+
+.foot-btn span {
+    font-size: 0.5rem;
+}
+
+.foot-btn span a {
+    font-size: 0.5rem;
+}
+
+.foot1 a {
+    height: 3vh;
+    font-size: 0.7rem;
+    margin-top: 3px;
+    padding-top: 3px;
+}
+
+#btn a {
+    font-size: 0.7rem;
+}
+
+.foot {
+    height: 30vh;
+}
+
+#contact {
+    margin-left: 10px;
+    padding-right: 15px;
+    margin-top: 30px;
+}
+
+#contact h2 {
+    color: white;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    font-size: 0.85rem;
+}
+
+#contact input {
+    height: 2vh;
+    width: 25vw;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.whatsapp {
+    font-size: 0.8rem;
+    padding-top: 5px;
+}
+
+.icon {
+    font-size: 0.8rem;
+    padding-top: 5px;
+    padding-left: 2px;
+}
+
+.copy p {
+    font-size: 0.55rem;
+    margin-top: 10px;
+}
+
+.myProducts li {
+    font-size: 0.60rem;
+    margin-top: 2px;
+}
+
+.aboutUs li {
+    font-size: 0.60rem;
+    margin-top: 2px;
+}
+
+.aboutUs {
+    margin-left: 20px;
+}
