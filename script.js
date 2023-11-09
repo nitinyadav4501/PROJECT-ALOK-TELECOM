@@ -19,15 +19,25 @@ let music = document.querySelector(".music span a");
 const head = document.querySelectorAll(".head");
 const offer = document.querySelectorAll(".offer-boxes");
 const del = document.querySelectorAll(".name span del");
-let newCus = document.querySelector(".foot-btn span")
+let newCus = document.querySelector(".foot-btn span");
+let back = document.querySelector(".foot1 a")
+let foot = document.querySelector(".foot")
+let info = document.querySelector("#contact h2")
+let inp = document.querySelector("#contact input")
+let copy = document.querySelector(".copy p")
+let whatsapp = document.querySelector(".whatsapp")
+const icon = document.querySelectorAll(".icon")
+const about = document.querySelectorAll(".about p ")
+const mypro = document.querySelectorAll(".myProducts li")
+const abPro = document.querySelectorAll(".aboutUs li")
 
 
 let flag = 0
 sabkuchh.addEventListener("click", () => {
     if (flag == 0) {
         body.style.backgroundColor = "aliceblue"
-        navBar.style.backgroundColor = "cornsilk"
-        header.style.backgroundColor = "cornsilk"
+        navBar.style.backgroundColor = "rgb(204, 240, 240)"
+        header.style.backgroundColor = "rgb(204, 240, 240)"
         menu.style.color = "black"
         profile.style.color = "black"
         cart.style.color = "black"
@@ -56,6 +66,29 @@ sabkuchh.addEventListener("click", () => {
             del[l].style.color = "grey"
         }
         newCus.style.color = "black"
+        back.style.backgroundColor = "azure"
+        back.style.color = "black"
+        back.style.border = "0.3px solid black"
+        foot.style.backgroundColor = "rgb(204, 240, 240)"
+        info.style.color = "black"
+        inp.style.border = "0.3px solid black"
+        copy.style.color = "black"
+        whatsapp.style.color = "black"
+        for(let m = 0; m<icon.length; m++){
+            icon[m].style.color = "black"
+        }
+        
+        for(let p = 0; p<about.length; p++){
+            about[p].style.color = "black"
+        }
+        
+        for(let n = 0; n<mypro.length; n++){
+            mypro[n].style.color = "black"
+        }
+
+        for(let q = 0; q<abPro.length; q++){
+            abPro[q].style.color = "black"
+        }
         flag = 1
     }
     else {
@@ -87,7 +120,27 @@ sabkuchh.addEventListener("click", () => {
             offer[k].style.backgroundColor = "black"
         }
         newCus.style.color = "white"
+        back.style.backgroundColor = "rgb(70, 67, 67)"
+        back.style.color = "white"
+        back.style.border = "none"
+        foot.style.backgroundColor = " rgb(34, 33, 33)"
+        info.style.color = "white"
+        inp.style.border = "none"
+        copy.style.color = "white"
+        whatsapp.style.color = "white"
+        for(let m = 0; m<icon.length; m++){
+            icon[m].style.color = "white"
+        }
+        for(let p = 0; p<about.length; p++){
+            about[p].style.color = "white"
+        }
+        for(let n = 0; n<mypro.length; n++){
+            mypro[n].style.color = "white"
+        }
+        for(let q = 0; q<abPro.length; q++){
+            abPro[q].style.color = "white"
+        }
+
         flag = 0
     }
-
 })
