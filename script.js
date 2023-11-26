@@ -140,7 +140,6 @@ sabkuchh.addEventListener("click", () => {
         for(let q = 0; q<abPro.length; q++){
             abPro[q].style.color = "white"
         }
-
         flag = 0
     }
 })
