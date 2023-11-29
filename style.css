@@ -6,6 +6,9 @@
     font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 header {
     position: sticky;
