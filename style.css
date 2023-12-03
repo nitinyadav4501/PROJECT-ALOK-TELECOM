@@ -6,6 +6,24 @@
     font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box;
 }
+:root{
+    --body-color:black;
+    --primary-color- :black;
+    --secondary-color :white;
+    --forth-color :rgb(34, 33, 33);
+    --fifth-color :black;
+    --panel-color : rgba(67, 64, 64, 0.441);
+    --del-color:rgb(70, 67, 67);
+}
+.lightTheme{
+    --body-color:aliceblue;
+    --primary-color- :white;
+    --secondary-color :black;
+    --forth-color :rgb(204, 240, 240);
+    --panel-color : rgb(211, 224, 233);
+    --fifth-color :rgb(204, 240, 240);
+    --del-color:rgb(211, 224, 233);
+}
 html{
     scroll-behavior: smooth;
 }
@@ -13,15 +31,16 @@ html{
 header {
     position: sticky;
     top: 0px;
-    background-color: black;
+    background-color:var(--fifth-color);
     height: 9vh;
     display: flex;
     width: 100%;
+    border: 0.5px solid black;
 }
 
 /* BODY  */
 body {
-    background-color: black;
+    background-color: var(--body-color);
 }
 
 nav {
@@ -33,7 +52,7 @@ nav {
 /* NAV BAR */
 #navbar {
     display: flex;
-    background-color: black;
+    background-color: var(--fifth-color);
     padding: 0px 50px;
     align-items: center;
     justify-content: space-evenly;
@@ -60,7 +79,7 @@ nav {
 
 /* MENU BUTTON */
 .menu {
-    color: white;
+    color: var(--secondary-color);
     font-size: 1.2rem;
     cursor: pointer;
     margin-left: 50px;
@@ -68,7 +87,7 @@ nav {
 
 /* PROFILE */
 .profile {
-    color: white;
+    color: var(--secondary-color);
     display: flex;
     cursor: pointer;
     margin-left: 50px;
@@ -76,7 +95,7 @@ nav {
 }
 
 .profile a {
-    color: white;
+    color: var(--secondary-color);
     text-decoration: none;
     display: flex;
 }
@@ -92,7 +111,7 @@ nav {
 
 /* CART  */
 .cart {
-    color: white;
+    color: var(--secondary-color);
     display: flex;
     cursor: pointer;
     margin-left: 50px;
@@ -108,7 +127,7 @@ nav {
 }
 /* DARK MODE  */
 .dark i{
-    color: white;
+    color: var(--secondary-color);
     margin-left: 50px;
     font-size: 1.5rem;
     cursor: pointer;
@@ -128,6 +147,7 @@ nav {
     border-bottom-left-radius: 20px;
     border: none;
     padding-left: 20px;
+    border: 0.5px solid black;
 }
 
 .search:hover {
@@ -153,7 +173,7 @@ nav {
 .panel {
     height: 4.5vh;
     width: 100%;
-    background-color: rgb(53, 48, 48);
+    background-color: var(--panel-color);
 }
 
 .options {
@@ -180,7 +200,7 @@ nav {
 /* PANEL LINKS  */
 .option-link {
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
 }
 
 /* PANEL HOVER EFFECT  */
@@ -200,7 +220,7 @@ nav {
     height: 16.5vh;
     width: 9vw;
     border: 2px solid rgb(238, 106, 11);
-    background-color: rgba(67, 64, 64, 0.441);
+    background-color:rgb(211, 224, 233);
     border-radius: 100%;
     margin-top: 30px;
     cursor: pointer;
@@ -212,7 +232,7 @@ nav {
     height: 16.5vh;
     width: 9vw;
     border: 2px solid rgb(238, 106, 11);
-    background-color: rgba(67, 64, 64, 0.441);
+    background-color: rgb(211, 224, 233);
     border-radius: 100%;
     margin-top: 30px;
     cursor: pointer;
@@ -224,7 +244,7 @@ nav {
     height: 16.5vh;
     width: 9vw;
     border: 2px solid rgb(238, 106, 11);
-    background-color: rgb(67, 64, 64, 0.441);
+    background-color: rgb(211, 224, 233);
     border-radius: 100%;
     margin-top: 30px;
     cursor: pointer;
@@ -236,7 +256,7 @@ nav {
     height: 16.5vh;
     width: 9vw;
     border: 2px solid rgb(238, 106, 11);
-    background-color: rgb(228, 224, 224);
+    background-color: rgb(211, 224, 233);
     border-radius: 100%;
     margin-top: 30px;
     cursor: pointer;
@@ -248,7 +268,7 @@ nav {
     height: 16.5vh;
     width: 9vw;
     border: 2px solid rgb(238, 106, 11);
-    background-color: rgb(228, 224, 224);
+    background-color: rgb(211, 224, 233);
     border-radius: 100%;
     margin-top: 30px;
     cursor: pointer;
@@ -260,7 +280,7 @@ nav {
     height: 16.5vh;
     width: 9vw;
     border: 2px solid rgb(238, 106, 11);
-    background-color: rgb(228, 224, 224);
+    background-color: rgb(211, 224, 233);
     border-radius: 100%;
     margin-top: 30px;
     cursor: pointer;
@@ -272,7 +292,7 @@ nav {
     height: 16.5vh;
     width: 9vw;
     border: 2px solid rgb(238, 106, 11);
-    background-color: rgb(228, 224, 224);
+    background-color: rgb(211, 224, 233);
     border-radius: 100%;
     margin-top: 30px;
     cursor: pointer;
@@ -288,7 +308,7 @@ nav {
 
 /* PRODUCT NAMES  */
 .mobi span a {
-    color: white;
+    color: var(--secondary-color);
     margin-left: 25px;
     font-size: 1.2rem;
     cursor: pointer;
@@ -296,7 +316,7 @@ nav {
 }
 
 .headphone span a {
-    color: white;
+    color: var(--secondary-color);
     font-size: 1.2rem;
     cursor: pointer;
     text-decoration: none;
@@ -304,7 +324,7 @@ nav {
 }
 
 .earphone span a {
-    color: white;
+    color: var(--secondary-color);
     font-size: 1.2rem;
     cursor: pointer;
     text-decoration: none;
@@ -312,7 +332,7 @@ nav {
 }
 
 .keyboard span a {
-    color: white;
+    color: var(--secondary-color);
     font-size: 1.2rem;
     cursor: pointer;
     text-decoration: none;
@@ -320,7 +340,7 @@ nav {
 }
 
 .tele span a {
-    color: white;
+    color: var(--secondary-color);
     margin-left: 18px;
     font-size: 1.2rem;
     cursor: pointer;
@@ -328,7 +348,7 @@ nav {
 }
 
 .wear span a {
-    color: white;
+    color: var(--secondary-color);
     margin-left: 19px;
     font-size: 1.2rem;
     cursor: pointer;
@@ -336,7 +356,7 @@ nav {
 }
 
 .music span a {
-    color: white;
+    color: var(--secondary-color);
     margin-left: 22px;
     font-size: 1.2rem;
     cursor: pointer;
@@ -345,14 +365,14 @@ nav {
 
 /* OFFER BOX  */
 .head {
-    color: white;
+    color: var(--secondary-color);
     margin-top: 70px;
     font-size: 1.5rem;
     margin-left: 100px;
 }
 
 .head2 {
-    color: white;
+    color: var(--secondary-color);
     margin-top: 70px;
     font-size: 1.5rem;
     margin-left: 100px;
@@ -370,11 +390,11 @@ nav {
 }
 
 .offer-boxes {
-    color: white;
+    color: var(--secondary-color);
     height: 38vh;
     width: 18.5vw;
     border-radius: 15px;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--primary-color-);
     border: 2px solid rgb(238, 106, 11);
 }
 
@@ -402,7 +422,7 @@ nav {
 
 .name span del {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.662);
+    color: rgb(107, 101, 101);
 }
 
 .name span {
@@ -496,7 +516,7 @@ nav {
 }
 
 .foot-btn span {
-    color: white;
+    color: var(--secondary-color);
     font-size: 0.8rem;
 }
 
@@ -510,8 +530,9 @@ nav {
 .foot1 a {
     height: 5vh;
     width: 100%;
-    background-color: rgb(70, 67, 67);
-    color: white;
+    background-color:var(--del-color);
+    color: var(--secondary-color);
+    border: 0.5px solid black;
     margin-top: 25px;
     display: flex;
     justify-content: center;
@@ -523,19 +544,19 @@ nav {
 .foot {
     height: 33vh;
     width: 100%;
-    background-color: rgb(34, 33, 33);
+    background-color: var(--forth-color);
     display: flex;
     justify-content: space-evenly;
 }
 
 #contact h2 {
-    color: white;
+    color: var(--secondary-color);
     padding-bottom: 5px;
     padding-top: 20px;
 }
 
 .copy p {
-    color: white;
+    color: var(--secondary-color);
     padding-bottom: 5px;
     margin-top: 20px;
 }
@@ -545,17 +566,18 @@ nav {
     width: 20vw;
     border-radius: 10px;
     padding: 10px;
-    border: black;
+    border: var(--primary-color-);
+    border: 0.5px solid black;
 }
 
 .whatsapp {
-    color: white;
+    color: var(--secondary-color);
     font-size: 1.5rem;
     padding-top: 15px;
 }
 
 .icon {
-    color: white;
+    color: var(--secondary-color);
     font-size: 1.35rem;
     padding-top: 15px;
     padding-left: 10px;
@@ -571,18 +593,18 @@ nav {
 }
 
 .about p {
-    color: white;
+    color: var(--secondary-color);
     padding-top: 20px;
 }
 
 .myProducts p {
-    color: white;
+    color: var(--secondary-color);
     margin-bottom: 7px;
 }
 
 .myProducts li {
     list-style-type: square;
-    color: white;
+    color: var(--secondary-color);
     font-size: 0.80rem;
     margin-top: 5px;
 }
@@ -596,7 +618,7 @@ nav {
 }
 
 .aboutUs li {
-    color: white;
+    color: var(--secondary-color);
     list-style-type: square;
     font-size: 0.80rem;
     margin-top: 5px;
