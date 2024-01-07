@@ -5,21 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AT - Alok Telecom</title>
-    <!-- Start WOWSlider.com HEAD section -->
-    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
-    <script type="text/javascript" src="engine1/jquery.js"></script>
-    <!-- End WOWSlider.com HEAD section -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width:1120px)" href="Responsive-CSS/phone.css">
+    <link rel="stylesheet" media="screen and (max-width:1250px)" href="phone.css">
     <link rel="website icon" type="png" href="Images/alok.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Nunito+Sans:opsz,wght@6..12,600&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Nunito+Sans:opsz,wght@6..12,600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -27,40 +23,64 @@
         <!-- NAVIGATION BAR -->
         <nav>
             <div id="navbar">
-                <!-- ALOK TELECOM LOGO -->
-                <div class="nav-logo">
-                    <i class="fa-solid fa-mobile-screen"></i>
-                    <span> Alok | Telecom </span>
+                <div class="hamAndLogo">
+                    <div class="hamBurger">
+                        <i class="fa-solid fa-bars menu "></i>
+                    </div>
+                    <!-- ALOK TELECOM LOGO -->
+                    <div class="nav-logo">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <span> Alok | Telecom </span>
+                    </div>
                 </div>
-                <!-- MENU BUTTON -->
-                <div class="menu ">
-                    <i class="fa-solid fa-bars border "></i>
-                    Menu
-                </div>
-                <!-- PROFILE SIGN IN OPTION -->
-                <div class="profile border">
-                    <a href="SignUp-Page/sign_in.html">
-                        <i class="fa-regular fa-user"></i>
-                        <p>Sign in</p>
-                    </a>
-                </div>
-                <!-- ALOK TELECOM CART-->
-                <div class="cart border">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <p>Cart</p>
-                </div>
-                <!-- FOR DARK MODE  -->
-                <div class="dark">
-                    <i class="fa-solid fa-moon border"></i>
+
+                <div class="navItems">
+                    <!-- PROFILE SIGN IN OPTION -->
+                    <div class="profile ">
+                        <a href="SignUp-Page/sign_in.html">
+                            <i class="fa-regular fa-user"></i>
+                            <p>Sign in</p>
+                        </a>
+                    </div>
+                    <!-- ALOK TELECOM CART-->
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>Cart</p>
+                    </div>
+                    <!-- FOR DARK MODE  -->
+                    <div class="dark">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
                 </div>
             </div>
         </nav>
+        <!-- hamBurger Items  -->
+        <div class="hamItems">
+            <div class="hamLogo">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span> Alok | Telecom </span>
+                <div class="cross">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="hamOptions"><i class="fa-regular fa-user"></i>Sign in</div>
+            <div class="hamOptions"><i class="fa-solid fa-home"></i>Home</div>
+            <div class="hamOptions"><i class="fa-brands fa-space-awesome"></i>Today's deal</div>
+            <div class="hamOptions"><i class="fa-solid fa-mobile-screen-button"></i>Mobiles</div>
+            <div class="hamOptions"><i class="fa-solid fa-cart-shopping"></i>My Cart</div>
+            <div class="hamOptions"><i class="fa-brands fa-servicestack"></i>Customer Service</div>
+            <div class="hamOptions"><i class="fa-solid fa-phone-volume"></i>Contact Us</div>
+            <div class="hamOptions"><i class="fa-regular fa-address-card"></i>About Us</div>
+        </div>
         <div class="search">
             <input type="search" placeholder="Search with Alok Telecom">
             <!--SEARCH BAR ICON-->
             <div class="glass">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+        </div>
+        <div class="glassForPhone">
+            <i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </header>
     <!--PANEL-->
@@ -69,8 +89,7 @@
             <!-- PANEL OPTIONS  -->
             <ul>
                 <li><a href="#navbar" class="option-link">Home</a></li>
-                <li><a href="https://www.vijaysales.com/bucketdetails/offers-on-mobile-phones/1725"
-                        class="option-link">Today's deal</a></li>
+                <li><a href="#" class="option-link">Today's deal</a></li>
                 <li><a href="#deals" class="option-link">Mobiles</a></li>
                 <li><a href="#footer" class="option-link">Customer service</a></li>
                 <li><a href="#" class="option-link">About us</a></li>
@@ -79,104 +98,77 @@
             </ul>
         </div>
     </div>
-    <!-- PHONE AND ACCOSSORIES SLIDE ONE BY ONE  -->
-    <!-- Start WOWSlider.com BODY section -->
-    <div id="wowslider-container1">
-        <div class="ws_images">
-            <ul>
-                <li><img src="data1/images/iphone_ad.jpg" alt="iphone 15 " title="iphone 15 " id="wows1_0" /></li>
-                <li><img src="data1/images/one_plus_ce_3_lite.jpg" alt="one plus ce 3 lite" title="one plus ce 3 lite"
-                        id="wows1_1" /></li>
-                <li><img src="data1/images/one_plus_neckband.jpg" alt="one plus neckband" title="one plus neckband"
-                        id="wows1_2" /></li>
-                <li><a href="http://wowslider.net"><img src="data1/images/samsung_ad.jpg" alt="jquery slideshow"
-                            title="samsung ad" id="wows1_3" /></a></li>
-                <li><img src="data1/images/vivo_ad.jpg" alt="vivo ad" title="vivo ad" id="wows1_4" /></li>
-            </ul>
-        </div>
-        <div class="ws_bullets">
-            <div>
-                <a href="#" title="iphone 15 "><span><img src="data1/tooltips/iphone_ad.jpg"
-                            alt="iphone 15 " />1</span></a>
-                <a href="#" title="one plus ce 3 lite"><span><img src="data1/tooltips/one_plus_ce_3_lite.jpg"
-                            alt="one plus ce 3 lite" />2</span></a>
-                <a href="#" title="one plus neckband"><span><img src="data1/tooltips/one_plus_neckband.jpg"
-                            alt="one plus neckband" />3</span></a>
-                <a href="" title="samsung ad"><span><img src="data1/tooltips/samsung_ad.jpg"
-                            alt="samsung ad" />4</span></a>
-                <a href="#" title="vivo ad"><span><img src="data1/tooltips/vivo_ad.jpg" alt="vivo ad" />5</span></a>
-            </div>
-        </div>
-        <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net"></a></div>
-        <div class="ws_shadow"></div>
-    </div>
-    <script type="text/javascript" src="engine1/wowslider.js"></script>
-    <script type="text/javascript" src="engine1/script.js"></script>
-    <!-- End WOWSlider.com BODY section -->
     <!-- PRODUCTS TYPE -->
     <div class="products">
         <!-- MOBILES  -->
-        <div class="mobi">
-            <div id="mobiles"></div>
-            <span><a href="https://www.91mobiles.com/" class="pro">Mobiles</a></span>
+        <div class="productBox">
+            <div id="productImg">
+                <img src="Images/iPhone-12-PNG-Free-Download (1).png" alt="">
+            </div>
+            <span><a href="#" class="productName">Mobiles</a></span>
         </div>
         <!-- ACCOSSORIES -->
-        <div class="headphone">
-            <div id="headphones"></div>
-            <span><a href="https://www.vijaysales.com/mobiles-and-tablets/audio-accessories/buy-headphones-mobile-phone"
-                    class="pro">Headphones</a></span>
+        <div class="productBox">
+            <div id="productImg">
+                <img src="Images/headphones.png" alt="">
+            </div>
+            <span><a href="#" class="productName">Headphones</a></span>
         </div>
-        <div class="earphone">
-            <div id="earphones" class="productHead"></div>
-            <span><a href="https://www.jiomart.com/c/electronics/accessories/headphones-headsets/756?prod_mart_electronics_products_popularity%5Bpage%5D=4"
-                    class="pro">Earphones</a></span>
+        <div class="productBox">
+            <div id="productImg">
+                <img src="Images/earphone.png" alt="">
+            </div>
+            <span><a href="#" class="productName">Earphones</a></span>
         </div>
-        <div class="keyboard">
-            <div id="keyboard"></div>
-            <span><a href="https://www.moglix.com/it-electronics/computers/keyboards/214131700"
-                    class="pro">Keyboards</a></span>
+        <div class="productBox">
+            <div id="productImg">
+                <img src="Images/key.png" alt="">
+            </div>
+            <span><a href="#" class="productName">Keyboards</a></span>
         </div>
         <!-- TELEVISION  -->
-        <div class="tele">
-            <div id="television"></div>
-            <span><a href="https://www.reliancedigital.in/televisions/c/S101812" class="pro">Television</a></span>
+        <div class="productBox">
+            <div id="productImg">
+                <img src="Images/tv.png" alt="">
+            </div>
+            <span><a href="#" class="productName">Television</a></span>
         </div>
         <!-- WEARABLE  -->
-        <div class="wear">
-            <div id="wearable"></div>
-            <span><a href="https://www.reliancedigital.in/wearable-technology/c/S101722" class="pro">Wearable</a></span>
+        <div class="productBox">
+            <div id="productImg">
+                <img src="Images/watch.png" alt="">
+            </div>
+            <span><a href="#" class="productName">Wearable</a></span>
         </div>
         <!-- MUSIC SYSTEM  -->
-        <div class="music">
-            <div id="music-system"></div>
-            <span><a href="https://www.croma.com/l/speaker-for-home-use-0afz00a.html" class="pro">Speakers</a></span>
+        <div class="productBox">
+            <div id="productImg">
+                <img src="Images/sound2.png" alt="">
+            </div>
+            <span><a href="#" class="productName">Speakers</a></span>
         </div>
     </div>
+
     <div class="head" id="deals"><span>Festive Fiesta deals</span></div>
     <div class="box-head">
         <div class="offer-boxes-1">
-            <a href="https://www.oneplus.in/product/oneplus-bullets-wireless-z"><img src="Images/img1.webp"
-                    alt="Neckband and earbuds offer"></a>
+            <a href="#"><img src="Images/img1.webp" alt="Neckband and earbuds offer"></a>
         </div>
         <div class="offer-boxes-1">
-            <a
-                href="https://www.boat-lifestyle.com/collections/boat-smartwatch-deals?utm_source=google&utm_medium=pmax&utm_campaign=19864761985&gad_source=1&gclid=CjwKCAjwv-2pBhB-EiwAtsQZFA-7r01Yla7j48nu7NMy9G7HqY9aWQggOy1uWuNmuzuhRfByuR05cRoCjjkQAvD_BwE"><img
-                    src="Images/img2.webp" alt="Boat watches offer"></a>
+            <a href="#"><img src="Images/img2.webp" alt="Boat watches offer"></a>
         </div>
         <div class="offer-boxes-1">
             <a href="https://www.oneplus.in/"><img src="Images/img3.webp" alt="One plus mobile phone offer"></a>
         </div>
         <div class="offer-boxes-1">
-            <a
-                href="https://www.apple.com/in/ipad/?afid=p238%7Cs83Dh9kdr-dc_mtid_187079nc38483_pcrid_677127017270_pgrid_114045531255_pntwk_g_pchan__pexid__&cid=aos-IN-kwgo-ipad--slid---product-"><img
-                    src="Images/img4.webp" alt="ipad offer"></a>
+            <a href="#"><img src="Images/img4.webp" alt="ipad offer"></a>
         </div>
     </div>
     <div class="head"><span>Deals of the day</span></div>
     <div class="box-head">
         <div class="offer-boxes">
             <div class="offer-boxes-2">
-                <a href="https://www.vivo.com/in/products/param/v27-pro"><img src="Images/img6.webp" alt="Vivo v27 offer"></a>
+                <a href="#"><img src="Images/img6.webp" alt="Vivo v27 offer"></a>
             </div>
             <hr>
             <div class="name">
@@ -186,7 +178,7 @@
         </div>
         <div class="offer-boxes">
             <div class="offer-boxes-2">
-                <a href="https://buy.realme.com/in/goods/650"><img src="Images/img7.webp" alt="Realme c53 offer"></a>
+                <a href="#"><img src="Images/img7.webp" alt="Realme c53 offer"></a>
             </div>
             <hr>
             <div class="name">
@@ -194,11 +186,9 @@
                 <span>&#8377 9999.00 <del>&#8377 19999.00</del></span>
             </div>
         </div>
-        <div class="offer-boxes ">
+        <div class="offer-boxes">
             <div class="offer-boxes-2">
-                <a
-                    href="https://www.oneplus.in/oneplus-nord-3-5g?utm_source=google_Search&utm_medium=cpc&utm_campaign=Google_switchupgrader_pep_opnord3&gclid=CjwKCAjwv-2pBhB-EiwAtsQZFCJqUCGRXKUQnKPaFRRpKcoyvDGZxBC1XUEGhnfsYiz7oabG3vQtzxoCiGQQAvD_BwE"><img
-                        src="Images/img8.webp" alt="One plus nord 3 5G offer"></a>
+                <a href="#"><img src="Images/img8.webp" alt="One plus nord 3 5G offer"></a>
             </div>
             <hr>
             <div class="name">
@@ -208,9 +198,7 @@
         </div>
         <div class="offer-boxes">
             <div class="offer-boxes-2">
-                <a
-                    href="https://www.mi.com/in/product/redmi-12-5g/?skupanel=1&gad_source=1&gclid=CjwKCAjwv-2pBhB-EiwAtsQZFJEiEBZ_LwwSqd9zAw250KOj1K5L6QdGnCQG9vUybxs5nBkTvy-PvhoCsP4QAvD_BwE"><img
-                        src="Images/img9.webp" alt="Redmi 12 offer"></a>
+                <a href="#"><img src="Images/img9.webp" alt="Redmi 12 offer"></a>
             </div>
             <hr>
             <div class="name">
@@ -219,11 +207,12 @@
             </div>
         </div>
     </div>
+
     <div class="head">Deals on Audio</div>
     <div class="box-head">
         <div class="offer-boxes">
             <div class="offer-boxes-2">
-                <a href="https://www.realme.com/in/realme-buds-air-3"><img src="Images/buds1.webp" alt="Realme buds air 3"></a>
+                <a href="#"><img src="Images/buds1.webp" alt="Realme buds air 3"></a>
             </div>
             <hr>
             <div class="name">
@@ -233,7 +222,7 @@
         </div>
         <div class="offer-boxes">
             <div class="offer-boxes-2">
-                <a href="https://www.realme.com/in/realme-buds-air-3"><img src="Images/buds2.webp" alt=""></a>
+                <a href="#"><img src="Images/buds2.webp" alt=""></a>
             </div>
             <hr>
             <div class="name">
@@ -243,8 +232,7 @@
         </div>
         <div class="offer-boxes">
             <div class="offer-boxes-2">
-                <a href="https://www.boat-lifestyle.com/products/airdopes-100-wireless-earbuds"><img src="Images/buds3.webp"
-                        alt="Boat airdopes"></a>
+                <a href="#"><img src="Images/buds3.webp" alt="Boat airdopes"></a>
             </div>
             <hr>
             <div class="name">
@@ -254,7 +242,7 @@
         </div>
         <div class="offer-boxes">
             <div class="offer-boxes-2">
-                <a href="https://www.boat-lifestyle.com/products/boat-airdopes-148"><img src="Images/buds4.webp" alt=""></a>
+                <a href="#"><img src="Images/buds4.webp" alt=""></a>
             </div>
             <hr>
             <div class="name">
@@ -263,68 +251,77 @@
             </div>
         </div>
     </div>
-    <div class="head head2">Apple at Alok Telecom</div>
+    <div class="head">Apple at Alok Telecom</div>
     <div class="box-head">
-        <div class="box2">
-            <a href="https://www.apple.com/in/shop/buy-iphone/iphone-13"><img src="Images/i phone 13 offer.webp"
-                    alt="iphone 13"></a>
+        <div class="appleAdBox">
+            <a href="#"><img src="Images/i phone 13 offer.webp" alt="iphone 13"></a>
         </div>
-        <div class="box2">
-            <a href="https://www.apple.com/in/apple-watch-series-9/"><img src="Images/watch se .webp" alt="watch se"></a>
+        <div class="appleAdBox">
+            <a href="#"><img src="Images/watch se .webp" alt="watch se"></a>
         </div>
-        <div class="box2">
-            <a href="https://www.apple.com/in/airpods-pro/"><img src="Images/airpods pro offer.webp" alt="airpods pro"></a>
+        <div class="appleAdBox">
+            <a href="#"><img src="Images/airpods pro offer.webp" alt="airpods pro"></a>
         </div>
-        <div class="box2">
-            <a href="https://www.apple.com/in/apple-watch-series-9/"><img src="Images/watch se .webp" alt="watch se"></a>
+        <div class="appleAdBox">
+            <a href="#"><img src="Images/watch se .webp" alt="watch se"></a>
         </div>
     </div>
     <div class="box-head">
         <div class="box1">
-            <a href="https://www.apple.com/in/iphone-15/"><img src="Images/ip15.webp" alt="iphone 15"></a>
+            <a href="#"><img src="Images/ip15.webp" alt="iphone 15"></a>
         </div>
         <div class="box1">
-            <a href="https://www.apple.com/in/iphone-14/specs/"><img src="Images/ip14.webp" alt="iphone 14"></a>
+            <a href="#"><img src="Images/ip14.webp" alt="iphone 14"></a>
         </div>
     </div>
     <div class="box-head">
         <div class="box1">
-            <a href="https://www.apple.com/in/apple-watch-series-9/"><img src="Images/watch se.webp" alt="watch se"></a>
+            <a href="#"><img src="Images/watch se.webp" alt="watch se"></a>
         </div>
         <div class="box1">
-            <a href="https://www.apple.com/in/apple-watch-series-9/"><img src="Images/watch se2.webp" alt="watch se"></a>
+            <a href="#"><img src="Images/watch se2.webp" alt="watch se"></a>
         </div>
     </div>
     <div class=" head head2">New at Alok Telecom</div>
     <div class="box-head">
         <div class="box1">
-            <a href="https://www.realme.com/in/realme-pad"><img src="Images/pad go.webp" alt=""></a>
+            <a href="#"><img src="Images/pad go.webp" alt=""></a>
         </div>
         <div class="box1">
-            <a
-                href="https://www.samsung.com/in/smartphones/galaxy-s23-fe/buy/?cid=in_pd_ppc_google_im-mobile-smartphones-s23fe-dtc_sales_samsung-s23fe-all-2023_eshop-pmax-pla_05Oct2023-na_1ur-503164l-2023-eshop-bau-performancemax-cpc_pfm--20621494231------x--&gad_source=1&gclid=CjwKCAjwv-2pBhB-EiwAtsQZFEq-pgz2FmvrOCyKH3s4joxMWnRGIEwQ454m0ryetBirXjTUEa5SsxoCRSwQAvD_BwE"><img
-                    src="Images/s23 fe.webp" alt=""></a>
+            <a href="#"><img src="Images/s23 fe.webp" alt=""></a>
         </div>
     </div>
     <div class="head">Top Brands</div>
     <div class="products">
-        <a href="https://www.apple.com/">
-            <div id="apple"></div>
+        <a href="#">
+            <div class="companyLogos">
+                <img src="Images/apple logo.webp" alt="">
+            </div>
         </a>
-        <a href="https://www.samsung.com/in/">
-            <div id="samsung"></div>
+        <a href="#">
+            <div class="companyLogos">
+                <img src="Images/samsung logo.webp" alt="">
+            </div>
         </a>
-        <a href="https://www.oppo.com/in/">
-            <div id="oppo"></div>
+        <a href="#">
+            <div class="companyLogos">
+                <img src="Images/oppo logo.webp" alt="">
+            </div>
         </a>
-        <a href="https://www.vivo.com/in">
-            <div id="vivo"></div>
+        <a href="#">
+            <div class="companyLogos">
+                <img src="Images/vivo logo.webp" alt="">
+            </div>
         </a>
-        <a href="https://www.realme.com/in/">
-            <div id="realme"></div>
+        <a href="#">
+            <div class="companyLogos">
+                <img src="Images/mi logo.webp" alt="">
+            </div>
         </a>
-        <a href="https://www.mi.com/in/">
-            <div id="redmi"></div>
+        <a href="#">
+            <div class="companyLogos">
+                <img src="Images/realme logo.webp" alt="">
+            </div>
         </a>
     </div>
     <div class="foot-btn">
@@ -342,14 +339,11 @@
                 <h2>Contact with us</h2>
                 <input type="email" placeholder="Enter email ID">
                 <div>
-                    <i class="fa-brands fa-whatsapp whatsapp"></i>
+                    <i class="fa-brands fa-whatsapp icon"></i>
                     <i class="fa-brands fa-facebook icon"></i>
                     <i class="fa-brands fa-instagram icon"></i>
                     <i class="fa-brands fa-youtube icon"></i>
                     <i class="fa-brands fa-twitter icon"></i>
-                </div>
-                <div class="copy">
-                    <p>&copy Copyright 2023 <br>Alok Telecom All rights reserved</p>
                 </div>
             </div>
             <div class="about">
@@ -377,6 +371,9 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="copy">
+            <p>&copy Copyright 2023 Alok Telecom All rights reserved</p>
         </div>
     </footer>
     <script src="script.js"></script>
