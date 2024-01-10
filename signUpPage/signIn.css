@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+}
+.lightTheme{
+    --body-color:rgb(20, 20, 20);
+    --primary-color- :black;
+    --secondary-color :white;
+    --forth-color :rgb(34, 33, 33);
+    --fifth-color :rgba(0, 0, 0, 0.674);
+    --panel-color : rgba(67, 64, 64, 0.441);
+    --del-color:rgb(70, 67, 67);
+    --title-color:rgb(238, 106, 11);
+}
+:root{
+    --body-color:aliceblue;
+    --primary-color- :white;
+    --secondary-color :black;
+    --forth-color :rgb(204, 240, 240);
+    --panel-color : rgb(211, 224, 233);
+    --fifth-color :rgb(204, 240, 240);
+    --del-color:rgb(211, 224, 233);
+    --title-color:rgb(234, 152, 94);
+}
+body{
+    background-color: beige;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainDiv{
+    /* margin-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    background-color: var(--body-color);
+    border-radius: 40px;
+    padding-bottom: 30px;
+}
+.mainDiv h3{
+    padding: 15px;
+    color: var(--title-color);
+    text-align: center;
+}
+form{
+    margin-top: 10px;
+}
+.user{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.user input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--title-color);
+    border-bottom-right-radius: 50%;
+    padding: 15px;
+    width: 300px;
+    background: none;
+    color: var(--secondary-color);
+}
+.foot-btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#btn button {
+    height: 4vh;
+    width: 20vw;
+    border-radius: 10px;
+    background-color: var(--title-color);
+    border: none;
+    cursor: pointer;
+}
+
+#btn a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+#btn button:active{
+    background-color:rgba(165, 101, 33, 0.783);
+    color: white;
+
+}
+#btn button:active a{
+    color: white;
+}
+
+.foot-btn span {
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+}
+
+.foot-btn span a {
+    color: rgb(234, 152, 94);
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+}
